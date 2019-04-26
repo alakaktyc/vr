@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha&subset=cyrillic');
+@font-face {
+    font-family: Accuratist; /* Гарнитура шрифта */
+    src: url(../fonts/Accuratist/Accuratist.otf);
+    src: url(../fonts/Accuratist/Accuratist.ttf);
+}
+/*RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    min-width: 980px;
+}
+
+                /*HEADER*/
+
+.header {
+    height: 100vh;
+    background: url("../img/head.jpg") 50% 50%/cover;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+}
+h1, h2 {
+    text-align: center;
+    padding-top: 40px;
+    font-family: Accuratist, serif;
+    font-size: 80px;
+    }
+h1{
+    background: linear-gradient(to bottom, #d628bd 20%, #1c0719 80%);
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10vh 0;
+}
+
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    color: #fefefe;
+    text-shadow: #e7e7e7 1px 2px 0,
+    #999 4px 3px 3px,
+    #ccc 8px 11px 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    /*font-family: 'Neucha', cursive;*/
+    font-size: 40px;
+}
+.header__logo{
+    background: url("../img/log.png");
+    width: 83px;
+    height: 57px;
+}
+.header__navigation {
+    height: 57px;
+    background-color: rgba(23, 23, 50, 0.7);
+    text-align: center;
+    border-radius: 4px;
+}
+.header__menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.header__menu a {
+    text-decoration: none;
+    color: #ffe;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 15px;
+    font-size: 30px;
+    transition: background-color 0.5s ease-in-out;
+    font-family: 'Neucha', cursive;
+}
+
+.header__menu a:hover {
+    background-color: #631818;
+}
+.header__btn{
+    position: relative;
+    top: 15vh;
+    margin: 0 auto;
+    text-align: center;
+}
+.header__btn a{
+    background: rgba(0, 0, 0, 0.8);
+    border: 5px solid white;
+    border-radius: 50px;
+    line-height: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    padding: .5em 2em;
+    color: #fff;
+    transition: box-shadow 0.5s ease-in-out;
+}
+.header__btn a:hover{box-shadow: inset 0 0 20px 7px rgba(8,9,51,0.74);}
+.header__btn a:active { background: rgb(8,9,51); }
+
+
+
+/*PRICE*/
+.price{
+    background: linear-gradient(to top, #95a8c6, #0f2a54);
+    width: 100%;
+    height: 100%;
+}
+.price h2{
+    color: black;
+}
+.price__our{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}
+.price__inner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+}
+h3{
+    text-transform: uppercase;
+}
+.price__time, .price__money{
+    display: block;
+}
+
+.price__list li{
+    display: flex;
+    border: 2px solid #222222;
+    border-radius: 10px;
+    font-size: 30px;
+    transition: background-color 0.5s ease-in-out ;
+}
+.price__time{
+    display: flex;
+    width: 150px;
+}
+.price__list li:hover{background-color: rgba(8,9,51,0.74);}
+
+/*ABOUT*/
+.about{
+    height: 100%;
+    background: linear-gradient(to bottom, #95a8c6, #321d54);
+}
