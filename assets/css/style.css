@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Neucha&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 @font-face {
     font-family: Accuratist; /* Гарнитура шрифта */
     src: url(../fonts/Accuratist/Accuratist.otf);
@@ -54,6 +55,7 @@ table {
     box-sizing: border-box;
 }
 
+
 .container{
     margin: 0 auto;
     min-width: 980px;
@@ -61,19 +63,19 @@ table {
 
                 /*HEADER*/
 
-.header {
+.header__back{
     height: 100vh;
     background: url("../img/head.jpg") 50% 50%/cover;
     font-family: "Raleway", sans-serif;
     letter-spacing: 1px;
 }
-h1, h2 {
+h1,h2,h3 {
     text-align: center;
     padding-top: 40px;
-    font-family: Accuratist, serif;
-    font-size: 80px;
     }
 h1{
+    font-family: Accuratist, serif;
+    font-size: 80px;
     background: linear-gradient(to bottom, #d628bd 20%, #1c0719 80%);
     font-weight: bold;
     -webkit-background-clip: text;
@@ -89,8 +91,14 @@ h2{
     #999 4px 3px 3px,
     #ccc 8px 11px 10px;
     font-family: Helvetica, Arial, sans-serif;
-    /*font-family: 'Neucha', cursive;*/
     font-size: 40px;
+}
+h3{
+    color:#fff;
+    text-shadow:0 0 20px #FF3333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    padding: 15px;
 }
 .header__logo{
     background: url("../img/log.png");
@@ -100,7 +108,6 @@ h2{
 .header__navigation {
     height: 57px;
     background-color: rgba(23, 23, 50, 0.7);
-    text-align: center;
     border-radius: 4px;
 }
 .header__menu {
@@ -116,17 +123,19 @@ h2{
     display: block;
     padding: 10px 15px;
     font-size: 30px;
-    transition: background-color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
     font-family: 'Neucha', cursive;
 }
 
 .header__menu a:hover {
-    background-color: #631818;
+    color: #d628bd;
+}
+.header__inner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .header__btn{
-    position: relative;
-    top: 15vh;
-    margin: 0 auto;
     text-align: center;
 }
 .header__btn a{
@@ -142,53 +151,78 @@ h2{
     color: #fff;
     transition: box-shadow 0.5s ease-in-out;
 }
-.header__btn a:hover{box-shadow: inset 0 0 20px 7px rgba(8,9,51,0.74);}
-.header__btn a:active { background: rgb(8,9,51); }
+.header__btn a:hover{box-shadow: inset 0 0 20px 7px #C3C;}
+.header__btn a:active { background: #C3C; }
 
 
 
 /*PRICE*/
 .price{
-    background: linear-gradient(to top, #95a8c6, #0f2a54);
-    width: 100%;
-    height: 100%;
+
 }
-.price h2{
-    color: black;
-}
-.price__our{
-    display: flex;
-    justify-content: space-around;
-    justify-items: center;
+.price__back, .about__back{
+    background: #CCCC99;
 }
 .price__inner{
-    display: flex;
     align-items: center;
-    flex-direction: column;
-    width: 300px;
+    display: flex;
 }
-h3{
-    text-transform: uppercase;
+.price__table{
+    font-family: 'Roboto', sans-serif;
+    cursor: default;
+    margin: 0 auto;
 }
-.price__time, .price__money{
-    display: block;
+.price__table{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 10px;
 }
 
-.price__list li{
-    display: flex;
-    border: 2px solid #222222;
-    border-radius: 10px;
-    font-size: 30px;
-    transition: background-color 0.5s ease-in-out ;
+.price__table td{
+    border-top: 10px solid #CCCCFF;
+    padding: 8px;
+    background: #fff;
 }
-.price__time{
-    display: flex;
-    width: 150px;
+.price__table tr:nth-child(n+3):hover td{
+    background-color: #CC99FF;
 }
-.price__list li:hover{background-color: rgba(8,9,51,0.74);}
+.price__days td{
+    text-align: center;
+    background-color: #bbbbbb;
+    font-weight:bold;
+}
+.price_sale{
+    font-size: 5em;
+    font-family: 'Roboto', sans-serif;
+    color: 	#FF3333;
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+
+}
 
 /*ABOUT*/
-.about{
-    height: 100%;
-    background: linear-gradient(to bottom, #95a8c6, #321d54);
+.about__inner{
+    display: flex;
+    align-items: center;
+}
+
+
+/*CONTACTS*/
+.contacts__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contacts__back{
+    background:#454545;
+    color: #fff;
 }
