@@ -190,7 +190,7 @@ h3{
     background-color: #bbbbbb;
     font-weight:bold;
 }
-.price_sale, .price_certificate{
+.price__sale, .price__certificate{
     font-size: 5em;
     font-family: 'Roboto', sans-serif;
     color: 	#FF3333;
@@ -208,14 +208,28 @@ h3{
     0 20px 20px rgba(0,0,0,.15);
 
 }
-.price_certificate{
+.price__certificate{
+    width: 980px;
     font-size: 2em;
     margin: 0 auto;
     text-align: center;
 }
-.price_certificate img{
-    width: 300px;
+.price__certificate-img{
+    background: url("../img/certificate.jpg") 50% 50%;
+    background-size: cover;
+
     height: 300px;
+    padding-right: 300px;
+}
+.price__certificate-wrap{
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+}
+.price__certificate-wrap p{
+    color: #000000;
+    text-align: justify;
+    font-size: 0.8em;
 }
 /*ABOUT*/
 .about__inner{
