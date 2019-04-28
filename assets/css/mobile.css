@@ -2,4 +2,12 @@
     .about__inner{
         flex-direction: column;
     }
+    /*.header__navigation{
+        width: 250px;
+
+    }
+    .header__menu{
+        flex-direction: column;
+        width: 250px;
+    }*/
 }
