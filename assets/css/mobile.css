@@ -2,6 +2,9 @@
     .about__inner{
         flex-direction: column;
     }
+    .header__wrap{
+        flex-direction: column;
+    }
     /*.header__navigation{
         width: 250px;
 

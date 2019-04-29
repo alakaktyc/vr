@@ -71,7 +71,7 @@ table {
 }
 h1,h2,h3 {
     text-align: center;
-    padding-top: 40px;
+    padding: 20px 0;
     }
 h1{
     font-family: Accuratist, serif;
@@ -105,6 +105,23 @@ h3{
     width: 83px;
     height: 57px;
 }
+.header__wrap{
+    width: 980px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #CC33CC;
+}
+.header__wrap a{
+    text-decoration: none;
+    color: #CC33CC;
+}
+
 .header__navigation {
     height: 57px;
     background-color: rgba(23, 23, 50, 0.7);
@@ -158,14 +175,15 @@ h3{
 
 /*PRICE*/
 .price{
-
+    padding-bottom: 20px;
 }
 .price__back, .about__back{
-    background: #DCDCDC;
+    background: #fff;
 }
 .price__inner{
     align-items: center;
     display: flex;
+    padding-bottom: 20px;
 }
 .price__table, .work__table{
     font-family: 'Roboto', sans-serif;
@@ -231,7 +249,18 @@ h3{
     text-align: justify;
     font-size: 0.8em;
 }
+
+/*MENTION*/
+.mention__back{
+    background: url("../img/mention.jpg") no-repeat 50% 50%/ cover;
+    height: 300px;
+}
+
+
 /*ABOUT*/
+.about__vive{
+    padding: 10px;
+}
 .about__inner{
     display: flex;
     align-items: center;
@@ -243,6 +272,9 @@ h3{
 .work__table td{
     border-top: 10px solid #454545;
     background: #fff;
+}
+.clients__back{
+    background: url("../img/bg_clients.jpg") no-repeat 50% 50%/ cover;;
 }
 
 /*CONTACTS*/
@@ -257,15 +289,17 @@ h3{
     justify-content: space-around;
 }
 .contacts__back{
-    background:#454545;
-    color: #fff;
+    background:#fff;
+    color: #000;
+    padding-bottom: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
 }
 .contacts__social{
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
+
 }
 
 /*RESERVATION*/
@@ -356,80 +390,3 @@ button:hover{
     background:#80b438;
 }
 
-/*Clients slider*/
-.slider {
-    margin: 0 auto;
-    width: 980px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .45);
-}
-
-.slider__wrapper {
-    display: flex;
-    transition: transform 0.6s ease;
-}
-
-.slider__item {
-    border: solid  5px #bbbbbb;
-    flex: 0 0 100%;
-    max-width: 50%;
-    height: 500px;
-    width: auto;
-}
-.first{background: url("../img/clients/1.jpg")100% 100%;}
-.second{background: url("../img/clients/2.jpg");}
-.third{background: url("../img/clients/3.jpg");}
-.fourth{background: url("../img/clients/4.jpg");}
-.fifth{background: url("../img/clients/5.jpg");}
-.sixth{background: url("../img/clients/6.jpg");}
-.seventh{background: url("../img/clients/7.jpg");}
-.eighth{background: url("../img/clients/8.jpg");}
-.ninth{background: url("../img/clients/9.jpg");}
-.slider__control {
-    position: absolute;
-    top: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    color: #fff;
-    text-align: center;
-    opacity: 0.5;
-    height: 50px;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, .5);
-}
-
-.slider__control:hover,
-.slider__control:focus {
-    color: #fff;
-    text-decoration: none;
-    outline: 0;
-    opacity: .9;
-}
-
-.slider__control_left {
-    left: 0;
-}
-
-.slider__control_right {
-    right: 0;
-}
-
-.slider__control::before {
-    content: '';
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: transparent no-repeat center center;
-    background-size: 100% 100%;
-}
-
-.slider__control_left::before {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-}
-
-.slider__control_right::before {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-}

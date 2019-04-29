@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
     <meta charset="UTF-8">
     <meta name="description" content="VR Company - это первый клуб виртуальной реальности в Лиде.
                 Погрузись в виртуальынй мир вместе с нами. Звоните +375 (29) 5352432">
@@ -28,8 +29,14 @@
             </nav>
                 <div class="header__inner">
             <h2>первый клуб виртуальной реальности в Лиде</h2>
+
             <h1><span class="header__title">VR<br>COMPANY</span></h1>
-            <div class="header__btn"><a href="#reservation">связаться с нами</a></div>
+                    <div class="header__wrap">
+                        <div class="header__address">Приходите к нам <p>г. Лида, ул. Замковая,4 офис 29</p></div>
+                        <div class="header__phone"><a rel="nofollow" class="phone" href="tel:+375295352432"
+                                                      title="Наберите нас">+375 (29) 5352432</a></div>
+                    </div>
+                        <div class="header__btn"><a href="#reservation">связаться с нами</a></div>
                 </div>
         </div>
         </div>
@@ -172,6 +179,46 @@
         </div>
 
     </section>
+    <section class="mention">
+        <div class="container">
+            <div class="mention__back">
+                <h2>Отзывы наших клиентов</h2>
+            <div id="slider" class="slider">
+                <ol class="slider__indicators">
+                    <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
+                    <li class="slider__indicator" data-slide-to="1"></li>
+                    <li class="slider__indicator" data-slide-to="2"></li>
+                    <li class="slider__indicator" data-slide-to="3"></li>
+                </ol>
+                <div class="slider__items">
+                    <div class="slider__item slider__item_active">
+                        <div class="slider__flex">
+                        <div><img src="assets/img/mentions/1client.jpg" alt="Фото" height="200px"></div><div class="slider__mention">Бомбааааа!!!! 👏 👏 👏 👏 👏 👏 👏 👏 Всем советую 🤗🤗🤗🤗🤗</div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__flex">
+                            <div><img src="assets/img/mentions/2client.jpg" alt="Фото" height="200px"></div><div class="slider__mention">Замечательная возможность весело провести пятничный вечер, отвлечься от тяжелых трудовых будней, поиграв в интересные и разнообразные игры👍👍👍✌</div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__flex">
+                            <div><img src="assets/img/mentions/1client.jpg" alt="Фото" height="200px"></div><div class="slider__mention">Бомбааааа!!!! 👏 👏 👏 👏 👏 👏 👏 👏 Всем советую 🤗🤗🤗🤗🤗</div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__flex">
+                            <div><img src="assets/img/mentions/1client.jpg" alt="Фото" height="200px"></div><div class="slider__mention">Бомбааааа!!!! 👏 👏 👏 👏 👏 👏 👏 👏 Всем советую 🤗🤗🤗🤗🤗</div>
+                        </div>
+                    </div>
+                </div>
+                <a class="slider__control slider__control_prev" href="#" role="button"></a>
+                <a class="slider__control slider__control_next" href="#" role="button"></a>
+            </div>
+            </div>
+        </div>
+
+    </section>
     <section class="about" id="about">
         <div class="container">
             <div class="about__back">
@@ -187,7 +234,6 @@
                             и полное погружение в виртуальный мир.</p>
                         <p>Администратор поможет освоиться, научит пользоваться контроллером,
                             обеспечит вашу безопасность.</p>
-
                         <table class="work__table">
                             <tbody>
                             <tr class="work__days">
@@ -212,24 +258,44 @@
                             </tbody>
                         </table>
                     </div>
+                    <div class="about__vive"><img src="./assets/img/vive.jpg" alt="Htc VIVE"></div>
                 </div>
-
+                <div class="our-clients">
+                    <div class="clients__back">
                 <h2>Фото наших клиентов</h2>
-                <div class="slider">
-                    <div class="slider__wrapper">
-                        <div class="slider__item first"></div>
-                        <div class="slider__item second"></div>
-                        <div class="slider__item third"></div>
-                        <div class="slider__item fourth"></div>
-                        <div class="slider__item fifth"></div>
-                        <div class="slider__item sixth"></div>
-                        <div class="slider__item seventh"></div>
-                        <div class="slider__item eighth"></div>
-                        <div class="slider__item ninth"></div>
+                    <div class="slider">
+                        <ol class="slider__indicators">
+                            <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
+                            <li class="slider__indicator" data-slide-to="1"></li>
+                            <li class="slider__indicator" data-slide-to="2"></li>
+                            <li class="slider__indicator" data-slide-to="3"></li>
+                        </ol>
+                        <div class="slider__items">
+                            <div class="slider__item slider__item_active">
+                                <div class="slider__flex">
+                                    <div><img src="assets/img/clients/1.jpg" alt="Фото"></div>
+                                </div>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__flex">
+                                    <div><img src="assets/img/clients/2.jpg" alt="Фото"></div>
+                                </div>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__flex">
+                                    <div><img src="assets/img/clients/3.jpg" alt="Фото"></div>
+                                </div>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__flex">
+                                    <div><img src="assets/img/clients/4.jpg" alt="Фото"></div><div class="slider__mention">Бомбааааа!!!! 👏 👏 👏 👏 👏 👏 👏 👏 Всем советую 🤗🤗🤗🤗🤗</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="slider__control slider__control_prev" href="#" role="button"></a>
+                        <a class="slider__control slider__control_next" href="#" role="button"></a>
                     </div>
-                    <a class="slider__control slider__control_left" href="#" role="button"></a>
-                    <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
-                </div>
+                    </div>
             </div>
         </div>
     </section>
@@ -294,7 +360,8 @@
             </div>
         </div>
     </section>
-    <script src="assets/js/clients.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <!--<script src="assets/js/clients.js"></script>!-->
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/common.js"></script>
 </body>
