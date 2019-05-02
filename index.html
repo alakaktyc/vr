@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/clients.css">
     <link rel="stylesheet" href="assets/css/slider.css">
     <meta charset="UTF-8">
     <meta name="description" content="VR Company - это первый клуб виртуальной реальности в Лиде.
@@ -183,7 +184,7 @@
         <div class="container">
             <div class="mention__back">
                 <h2>Отзывы наших клиентов</h2>
-            <div id="slider" class="slider">
+            <div class="slider">
                 <ol class="slider__indicators">
                     <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
                     <li class="slider__indicator" data-slide-to="1"></li>
@@ -263,36 +264,62 @@
                 <div class="our-clients">
                     <div class="clients__back">
                 <h2>Фото наших клиентов</h2>
-                    <div class="slider">
-                        <ol class="slider__indicators">
-                            <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
-                            <li class="slider__indicator" data-slide-to="1"></li>
-                            <li class="slider__indicator" data-slide-to="2"></li>
-                            <li class="slider__indicator" data-slide-to="3"></li>
-                        </ol>
-                        <div class="slider__items">
-                            <div class="slider__item slider__item_active">
-                                <div class="slider__flex">
-                                    <div><img src="assets/img/clients/1.jpg" alt="Фото"></div>
+
+                        <div class="clients__slider">
+                            <div class="clients__wrap">
+                                <div class="clients__item">
+                                    <img src="assets/img/clients/1.jpg" alt="Фото">
+                                </div>
+
+                                <div class="clients__item">
+                                    <img src="assets/img/clients/2.jpg" alt="Фото">
+                                </div>
+
+                                <div class="clients__item">
+                                    <img src="assets/img/clients/3.jpg" alt="Фото">
+                                </div>
+                                <div class="clients__item">
+                                    <img src="assets/img/clients/4.jpg" alt="Фото">
+                                </div>
+                                <div class="clients__item">
+                                    <img src="assets/img/clients/5.jpg" alt="Фото">
+                                </div>
+                                <div class="clients__item">
+                                    <img src="assets/img/clients/6.jpg" alt="Фото">
+                                </div>
+                                <div class="clients__item">
+                                    <img src="assets/img/clients/7.jpg" alt="Фото">
+                                </div>
+                                <div class="clients__item">
+                                    <img src="assets/img/clients/8.jpg" alt="Фото">
+                                </div>
+                                <div class="clients__item">
+                                    <img src="assets/img/clients/9.jpg" alt="Фото">
                                 </div>
                             </div>
-                            <div class="slider__item">
-                                <div class="slider__flex">
-                                    <div><img src="assets/img/clients/2.jpg" alt="Фото"></div>
-                                </div>
-                            </div>
-                            <div class="slider__item">
-                                <div class="slider__flex">
-                                    <div><img src="assets/img/clients/3.jpg" alt="Фото"></div>
-                                </div>
-                            </div>
-                            <div class="slider__item">
-                                <div class="slider__flex">
-                                    <div><img src="assets/img/clients/4.jpg" alt="Фото"></div>                                </div>
-                            </div>
+                            <a class="clients__prev" onclick="PrevItem()">&#10094;</a>
+                            <a class="clients__next" onclick="NextItem()">&#10095;</a>
                         </div>
-                        <a class="slider__control slider__control_prev" href="#" role="button"></a>
-                        <a class="slider__control slider__control_next" href="#" role="button"></a>
+                        <br>
+
+                        <div class="slider-dots">
+                            <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+                            <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+                            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+                            <span class="slider-dots_item" onclick="currentSlide(4)"></span>
+                            <span class="slider-dots_item" onclick="currentSlide(5)"></span>
+                            <span class="slider-dots_item" onclick="currentSlide(6)"></span>
+                            <span class="slider-dots_item" onclick="currentSlide(7)"></span>
+                            <span class="slider-dots_item" onclick="currentSlide(8)"></span>
+                            <span class="slider-dots_item" onclick="currentSlide(9)"></span>
+                        </div>
+
+
+
+
+
+
+                        </div>
                     </div>
                     </div>
             </div>
@@ -360,6 +387,7 @@
             </div>
         </div>
     </section>
+    <script src="assets/js/clients.js"></script>
     <script src="assets/js/slider.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/common.js"></script>

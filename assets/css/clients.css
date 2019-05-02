@@ -1,0 +1,100 @@
+.clients__back{
+    background: url("../img/bg_clients.jpg") no-repeat 50% 50%/ cover;
+}
+/* Собственно сам слайдер */
+.clients__slider{
+    max-width: 80%;
+    position: relative;
+    height: 500px;
+    margin: 0 auto;
+
+}
+.clients__wrap{
+    display: flex;
+    justify-content: center;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.clients__slider .clients__item img {
+    object-fit: cover;
+    height: 450px;
+}
+
+
+/* Кнопки вперед и назад */
+.clients__slider .clients__prev, .clients__slider .clients__next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+
+.clients__slider .clients__next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* При наведении на кнопки добавляем фон кнопок */
+
+.clients__slider .clients__prev:hover,
+.clients__slider .clients__next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Кружочки */
+
+.slider-dots {
+    text-align: center;
+
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+
+
+/* Анимация слайдов */
+
+.clients__slider .clients__item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}

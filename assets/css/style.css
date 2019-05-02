@@ -273,9 +273,7 @@ h3{
     border-top: 10px solid #454545;
     background: #fff;
 }
-.clients__back{
-    background: url("../img/bg_clients.jpg") no-repeat 50% 50%/ cover;;
-}
+
 
 /*CONTACTS*/
 .line{

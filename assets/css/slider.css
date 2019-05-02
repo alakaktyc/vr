@@ -1,4 +1,4 @@
-.slider {
+.slider, .slider1{
     /* устанавливаем относительное позиционирование элементу */
     position: relative;
 }
