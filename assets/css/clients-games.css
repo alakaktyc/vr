@@ -2,26 +2,35 @@
     background: url("../img/bg_clients.jpg") no-repeat 50% 50%/ cover;
 }
 /* Собственно сам слайдер */
-.clients__slider{
+.clients__slider, .games__slider{
     max-width: 80%;
     position: relative;
     height: 500px;
     margin: 0 auto;
 
 }
-.clients__wrap{
+.clients__wrap, .games__wrap{
     display: flex;
     justify-content: center;
 }
 /* Картинка мастабируется по отношению к родительскому элементу */
-.clients__slider .clients__item img {
+.clients__slider .clients__item img{
     object-fit: cover;
     height: 450px;
 }
 
+.games__slider .games__item img {
+    object-fit: cover;
+    height: 250px;
+    position: relative;
+    left: 21%;
+}
+
+
 
 /* Кнопки вперед и назад */
-.clients__slider .clients__prev, .clients__slider .clients__next {
+.clients__slider .clients__prev, .clients__slider .clients__next,
+.games__slider .games__prev, .games__slider .games__next{
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -36,7 +45,8 @@
 }
 
 
-.clients__slider .clients__next {
+.clients__slider .clients__next,
+.games__slider .games__next{
     right: 0;
     border-radius: 3px 0 0 3px;
 }
@@ -45,17 +55,19 @@
 /* При наведении на кнопки добавляем фон кнопок */
 
 .clients__slider .clients__prev:hover,
-.clients__slider .clients__next:hover {
+.clients__slider .clients__next:hover,
+.games__slider .games__prev:hover,
+.games__slider .games__next:hover{
     background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Кружочки */
 
-.slider-dots {
+.slider-dots, .games-dots {
     text-align: center;
 
 }
-.slider-dots_item{
+.slider-dots_item, .games-dots_item{
     cursor: pointer;
     height: 12px;
     width: 12px;
@@ -67,14 +79,16 @@
 }
 
 .active,
-.slider-dots_item:hover {
+.slider-dots_item:hover,
+.games-dots_item:hover{
     background-color: #aaa;
 }
 
 
 /* Анимация слайдов */
 
-.clients__slider .clients__item {
+.clients__slider .clients__item,
+.games__slider .games__item{
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
