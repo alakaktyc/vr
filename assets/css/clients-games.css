@@ -30,7 +30,9 @@
     left: 21%;
 }
 
-
+.games p{
+    line-height: 1.3em;
+}
 
 /* Кнопки вперед и назад */
 .clients__slider .clients__prev,

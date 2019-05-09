@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b89f0a4-6398-4552-aaa8-b890c56861de" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/js/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="1b89f0a4-6398-4552-aaa8-b890c56861de" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -38,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clients-games.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="clients-games.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/clients-games.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="115" column="37" lean-forward="true" selection-start-line="115" selection-start-column="37" selection-end-line="115" selection-end-column="37" />
+            <state relative-caret-position="1175">
+              <caret line="47" column="20" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -50,8 +47,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5493">
-              <caret line="321" lean-forward="true" selection-start-line="321" selection-end-line="321" />
+            <state relative-caret-position="368">
+              <caret line="125" column="14" selection-start-line="125" selection-start-column="14" selection-end-line="125" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -101,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menu.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/menu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            <state relative-caret-position="75">
+              <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -177,10 +174,10 @@
         <option value="$PROJECT_DIR$/assets/js/games.js" />
         <option value="$PROJECT_DIR$/assets/js/multi.js" />
         <option value="$PROJECT_DIR$/assets/css/clients-games.css" />
-        <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/assets/js/child.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/js/menu.js" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
       </list>
     </option>
   </component>
@@ -298,12 +295,12 @@
       <workItem from="1556619405066" duration="6874000" />
       <workItem from="1556714223251" duration="2438000" />
       <workItem from="1556801094523" duration="21692000" />
-      <workItem from="1557401450450" duration="8856000" />
+      <workItem from="1557401450450" duration="9197000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154112000" />
+    <option name="totallyTimeSpent" value="154453000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -571,17 +568,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/clients-games.css">
+    <entry file="file://$PROJECT_DIR$/assets/js/menu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="115" column="37" lean-forward="true" selection-start-line="115" selection-start-column="37" selection-end-line="115" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5493">
-          <caret line="321" lean-forward="true" selection-start-line="321" selection-end-line="321" />
+        <state relative-caret-position="75">
+          <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
         </state>
       </provider>
     </entry>
@@ -604,10 +594,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/menu.js">
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        <state relative-caret-position="368">
+          <caret line="125" column="14" selection-start-line="125" selection-start-column="14" selection-end-line="125" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/clients-games.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1175">
+          <caret line="47" column="20" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="20" />
         </state>
       </provider>
     </entry>
