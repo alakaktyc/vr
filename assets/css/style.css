@@ -78,9 +78,9 @@ h1{
     font-size: 80px;
     background: linear-gradient(to bottom, #d628bd 20%, #1c0719 80%);
     font-weight: bold;
+    padding: 10vh 0;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding: 10vh 0;
 }
 
 h2{
@@ -141,8 +141,11 @@ h3{
     display: block;
     padding: 10px 15px;
     font-size: 30px;
-    transition: color 0.5s ease-in-out;
     font-family: 'Neucha', cursive;
+    transition: color 0.5s ease-in-out;
+    -webkit-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
+    -moz-transition: color 0.5s ease-in-out;
 }
 
 .header__menu a:hover {
@@ -236,7 +239,6 @@ h3{
 .price__certificate-img{
     background: url("../img/certificate.jpg") 50% 50%;
     background-size: cover;
-
     height: 300px;
     padding-right: 300px;
 }
@@ -430,15 +432,15 @@ textarea{
     height: 120px;
     border:rgba(0,0,0,.3) 2px solid;
     box-sizing:border-box;
-    -moz-border-radius: 3px;
     font-size:18px;
     font-family: 'Open Sans', sans-serif;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
     display:block;
     padding:10px;
     margin-bottom:30px;
     overflow:hidden;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
 }
 
 button{
