@@ -123,6 +123,7 @@ h3{
 }
 
 .header__navigation {
+    z-index: 2;
     height: 57px;
     background-color: rgba(23, 23, 50, 0.7);
     border-radius: 4px;
