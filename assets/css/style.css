@@ -306,12 +306,16 @@ h3{
     flex-direction: column;
 }
 
-.games__title{
+.games__title,
+.multi-games__title,
+.child-games__title{
     text-align: center;
     font-family: Roboto, sans-serif;
     font-size: 1.2em;
 }
-.games__item p{
+.games__item p,
+.multi-games__item p,
+.child-games__item p{
     font-family: Roboto, sans-serif;
     text-align: justify;
 }

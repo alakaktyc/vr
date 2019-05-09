@@ -2,24 +2,28 @@
     background: url("../img/bg_clients.jpg") no-repeat 50% 50%/ cover;
 }
 /* Собственно сам слайдер */
-.clients__slider, .games__slider{
+.clients__slider, .games__slider, .multi-games__slider, .child-games__slider{
     max-width: 80%;
     position: relative;
     height: 500px;
     margin: 0 auto;
 
 }
-.clients__wrap, .games__wrap{
+.clients__wrap, .games__wrap, .multi-games__wrap, .child-games__wrap{
     display: flex;
     justify-content: center;
 }
-/* Картинка мастабируется по отношению к родительскому элементу */
+
+
+/* Картинка маштабируется по отношению к родительскому элементу */
 .clients__slider .clients__item img{
     object-fit: cover;
     height: 450px;
 }
 
-.games__slider .games__item img {
+.games__slider .games__item img,
+.multi-games__slider .multi-games__item img,
+.child-games__slider .child-games__item img{
     object-fit: cover;
     height: 250px;
     position: relative;
@@ -29,8 +33,14 @@
 
 
 /* Кнопки вперед и назад */
-.clients__slider .clients__prev, .clients__slider .clients__next,
-.games__slider .games__prev, .games__slider .games__next{
+.clients__slider .clients__prev,
+.clients__slider .clients__next,
+.games__slider .games__prev,
+.games__slider .games__next,
+.multi-games__slider .multi-games__prev,
+.multi-games__slider .multi-games__next,
+.child-games__slider .child-games__prev,
+.child-games__slider .child-games__next{
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -46,7 +56,9 @@
 
 
 .clients__slider .clients__next,
-.games__slider .games__next{
+.games__slider .games__next,
+.multi-games__slider .multi-games__next,
+.child-games__slider .child-games__next{
     right: 0;
     border-radius: 3px 0 0 3px;
 }
@@ -57,17 +69,24 @@
 .clients__slider .clients__prev:hover,
 .clients__slider .clients__next:hover,
 .games__slider .games__prev:hover,
-.games__slider .games__next:hover{
+.games__slider .games__next:hover,
+.multi-games__slider .multi-games__prev:hover,
+.multi-games__slider .multi-games__next:hover,
+.child-games__slider .child-games__prev:hover,
+.child-games__slider .child-games__next:hover{
     background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Кружочки */
 
-.slider-dots, .games-dots {
+.slider-dots{
     text-align: center;
 
 }
-.slider-dots_item, .games-dots_item{
+.slider-dots_item,
+.games-dots_item,
+.multi-games-dots_item,
+.child-games-dots_item{
     cursor: pointer;
     height: 12px;
     width: 12px;
@@ -80,7 +99,9 @@
 
 .active,
 .slider-dots_item:hover,
-.games-dots_item:hover{
+.games-dots_item:hover,
+.multi-games-dots_item:hover,
+.child-games-dots_item:hover{
     background-color: #aaa;
 }
 
@@ -88,7 +109,9 @@
 /* Анимация слайдов */
 
 .clients__slider .clients__item,
-.games__slider .games__item{
+.games__slider .games__item,
+.multi-games__slider .multi-games__item,
+.child-games__slider .child-games__item{
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
