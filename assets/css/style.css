@@ -283,7 +283,7 @@ h3, .price__sale, .price__text{
     font-size: 50px;
     margin-top: -335px;
 }
-.price__certificate-card .price__certificate-card_name{
+.price__certificate-card .price__certificate-card_title .price__certificate-card_name{
     color: #000;
     font-family: Roboto, sans-serif;
 }
