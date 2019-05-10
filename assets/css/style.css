@@ -55,7 +55,9 @@ table {
     box-sizing: border-box;
 }
 
-
+body{
+    scroll-behavior: smooth;
+}
 .container{
     margin: 0 auto;
     min-width: 980px;
@@ -73,7 +75,7 @@ h1,h2,h3 {
     text-align: center;
     padding: 20px 0;
     }
-h1{
+h1, .price__certificate-card_title, .about__VR{
     font-family: Accuratist, serif;
     font-size: 80px;
     background: linear-gradient(to bottom, #d628bd 20%, #1c0719 80%);
@@ -94,10 +96,7 @@ h2{
     font-size: 40px;
 }
 h3{
-    color:#000;
-    text-shadow:0 0 20px #FF3333;
-    font-family: 'Roboto', sans-serif;
-    font-size: 3em;
+    font-size: 2em;
     padding: 15px;
 }
 .header__logo{
@@ -108,7 +107,6 @@ h3{
 .header__wrap{
     width: 980px;
     height: 70px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Roboto', sans-serif;
@@ -116,6 +114,11 @@ h3{
     font-weight: bold;
     text-align: center;
     color: #CC33CC;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
 }
 .header__wrap a{
     text-decoration: none;
@@ -131,6 +134,10 @@ h3{
 .header__menu {
     list-style: none;
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
     justify-content: center;
 }
 
@@ -153,6 +160,10 @@ h3{
 }
 .header__inner{
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
     align-items: center;
     flex-direction: column;
 }
@@ -187,6 +198,10 @@ h3{
 .price__inner{
     align-items: center;
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
     padding-bottom: 20px;
 }
 .price__table, .work__table{
@@ -212,8 +227,7 @@ h3{
     background-color: #bbbbbb;
     font-weight:bold;
 }
-.price__sale, .price__certificate{
-    font-size: 5em;
+h3, .price__sale, .price__text{
     font-family: 'Roboto', sans-serif;
     color: 	#FF3333;
     text-shadow: 0 1px 0 #ccc,
@@ -230,24 +244,67 @@ h3{
     0 20px 20px rgba(0,0,0,.15);
 
 }
+.price__sale{
+    font-size: 5em;
+}
 .price__certificate{
     width: 980px;
     font-size: 2em;
     margin: 0 auto;
     text-align: center;
 }
-.price__certificate-img{
-    background: url("../img/certificate.jpg") 50% 50%;
-    background-size: cover;
-    height: 300px;
-    padding-right: 300px;
+.price__certificate .price__text{
+    font-size: 30px;
 }
+
+.price__certificate-card {
+    margin: 30px auto;
+    width: 400px;
+    height: 300px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.price__certificate-card .price__certificate-card_back {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    background: radial-gradient(circle, #74b3db,#19435e);
+}
+
+
+.price__certificate-card .price__certificate-card_title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 0 40px;
+    font-size: 50px;
+    margin-top: -335px;
+}
+.price__certificate-card .price__certificate-card_name{
+    color: #000;
+    font-family: Roboto, sans-serif;
+}
+.price__certificate-card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+
 .price__certificate-wrap{
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
     align-content: space-around;
     align-items: center;
 }
 .price__certificate-wrap p{
+    padding-left: 30px;
     color: #000000;
     text-align: justify;
     font-size: 0.8em;
@@ -297,13 +354,17 @@ h3{
 
 .tab :checked + .tab-title {
     position: relative;
-    background: #fff;
+    background: #CCCCFF;
     top: 1px;
     z-index: 1;
 }
 
 .tab :checked ~ .tab-content {
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
     justify-items: center;
     justify-content: center;
     flex-direction: column;
@@ -332,17 +393,47 @@ h3{
 
 
 /*ABOUT*/
+.about__VR{
+    font-size: 25px;
+}
 .about__vive{
     padding: 10px;
 }
 .about__inner{
+    padding-bottom: 15px;
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
     align-items: center;
 }
 .about__text p{
+    line-height: 1.2em;
     padding: 10px;
     font-family: Arial, sans-serif;
 }
+
+.about__admin {
+    padding-bottom: 10px;
+    list-style: none;
+}
+.about__admin li{
+    padding:6px;
+}
+.about__admin li:before {
+    padding-right:10px;
+    font-weight: bold;
+    color: #C0C0C0;
+    content: "\2714";
+    transition-duration: 0.5s;
+}
+.about__admin li:hover:before {
+    color: #337AB7;
+    content: "\2714";
+}
+
+
 .work__table td{
     border-top: 10px solid #454545;
     background: #fff;
@@ -357,6 +448,10 @@ h3{
 }
 .contacts__inner{
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
     align-items: center;
     justify-content: space-around;
 }
@@ -369,6 +464,10 @@ h3{
 }
 .contacts__social{
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
     align-items: center;
     flex-direction: column;
 
@@ -383,6 +482,10 @@ h3{
     margin: 0 auto;
     align-items: center;
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
     justify-content: space-around;
 }
 
@@ -394,6 +497,10 @@ h3{
 
 .reservation__btn{
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
     flex-direction: column;
     align-items: center;
 }

@@ -160,12 +160,17 @@
 
 .slider__flex{
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
     align-items: center;
     color: #fff;
     font-family: Arial, sans-serif;
     font-weight: bold;
 }
 .slider__mention{
+    line-height: 1.2em;
     padding: 0 10px;
 }
 .slider__flex img{
