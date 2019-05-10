@@ -408,7 +408,7 @@ h3, .price__sale, .price__text{
     display: -ms-flex;
     align-items: center;
 }
-.about__text p{
+.about__text p, .about__admin{
     line-height: 1.2em;
     padding: 10px;
     font-family: Arial, sans-serif;
