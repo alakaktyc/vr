@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="assets/css/mobile.css">
     <link rel="stylesheet" href="assets/css/clients-games.css">
     <link rel="stylesheet" href="assets/css/slider.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="description" content="VR Company - это первый клуб виртуальной реальности в Лиде.
                 Погрузись в виртуальынй мир вместе с нами. Звоните +375 (29) 5352432">
@@ -48,7 +49,7 @@
             <div class="price__back">
             <h2>наши цены</h2>
                 <div class="price__inner">
-                <table class="price__table">
+                <table class="price__table" data-aos="flip-left">
                     <tbody>
                     <tr class="price__days">
                         <td colspan="2">Вторник &#8212; Пятница</td>
@@ -77,7 +78,7 @@
                 </table>
 
 
-                <table class="price__table">
+                <table class="price__table" data-aos="flip-up">
                     <tbody>
                     <tr class="price__days">
                         <td colspan="2">Абонемент</td>
@@ -101,7 +102,7 @@
                     </tbody>
                 </table>
 
-            <table class="price__table">
+            <table class="price__table" data-aos="flip-right">
                 <tbody>
                 <tr class="price__days">
                     <td colspan="2">Суббота &#8212; Воскресенье</td>
@@ -191,7 +192,7 @@
         <div class="container">
             <div class="games__back">
                 <h2>Почувствуй виртуальную реальность с нашими играми</h2>
-                <div class="games__inner">
+                <div class="games__inner" data-aos="flip-left">
 
                     <div class="tabs">
                         <div class="tab">
@@ -750,8 +751,8 @@
             <div class="about__back">
             <h2>о нашей копании</h2>
                 <div class="about__inner">
-                    <div class="about__logo"><img src="./assets/img/logo.png" alt="Лого"></div>
-                    <div class="about__text">
+                    <div class="about__logo" data-aos="fade-right"><img src="./assets/img/logo.png" alt="Лого"></div>
+                    <div class="about__text" data-aos="fade-up">
                         <p><span class="about__VR">VR Company</span> – это то место, где грань между реальностью и вымыслом стирается.<br>
                         <span class="about__VR">VR Company</span> – это то, что находится за гранью фантазии.<br>
                             <span class="about__VR">VR Company</span> – это мир новых эмоций.<br></p>
@@ -789,10 +790,10 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="about__vive"><img src="./assets/img/vive.jpg" alt="Htc VIVE"></div>
+                    <div class="about__vive" data-aos="fade-left"><img src="./assets/img/vive.jpg" alt="Htc VIVE"></div>
                 </div>
                 <div class="our-clients">
-                    <div class="clients__back">
+                    <div class="clients__back" data-aos="fade-up">
                 <h2>Фото наших клиентов</h2>
 
                         <div class="clients__slider">
@@ -918,6 +919,8 @@
         </div>
     </section>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/app.js"></script>
     <script src="assets/js/games.js"></script>
     <script src="assets/js/child.js"></script>
     <script src="assets/js/multi.js"></script>
