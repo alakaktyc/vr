@@ -377,6 +377,12 @@ h3, .price__sale, .price__text{
     font-family: Roboto, sans-serif;
     font-size: 1.2em;
 }
+
+.games__item, .multi-games__item, .child-games__item{
+    text-align: center;
+}
+
+
 .games__item p,
 .multi-games__item p,
 .child-games__item p{
