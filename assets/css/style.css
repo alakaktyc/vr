@@ -283,10 +283,16 @@ h3, .price__sale, .price__text{
     font-size: 50px;
     margin-top: -335px;
 }
-.price__certificate-card .price__certificate-card_title .price__certificate-card_name{
+.price__certificate-card-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.price__certificate-card-logo .price__certificate-card_name{
     color: #000;
     font-family: Roboto, sans-serif;
 }
+
 .price__certificate-card:hover {
     transform: scale(0.9, 0.9);
     box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
