@@ -5,12 +5,7 @@
     .header__wrap{
         flex-direction: column;
     }
-    /*.header__navigation{
-        width: 250px;
-
+    .price__certificate-card_title{
+        margin: -150px;
     }
-    .header__menu{
-        flex-direction: column;
-        width: 250px;
-    }*/
 }
