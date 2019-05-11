@@ -486,6 +486,11 @@ h3, .price__sale, .price__text{
 }
 
 /*RESERVATION*/
+
+.reservation__form{
+    display: none;
+}
+
 .reservation__back{
     background:#000000;
     color: #fff;
