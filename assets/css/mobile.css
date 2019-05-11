@@ -1,4 +1,7 @@
 @media (max-width: 980px) {
+    body{
+        overflow-x: auto;
+    }
     .about__inner{
         display: flex;
         flex-direction: column;
