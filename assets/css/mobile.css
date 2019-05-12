@@ -16,4 +16,14 @@
     h1{
         padding: 0;
     }
+    .price__certificate-wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacts__map{
+        width: 40%;
+    }
+    .contacts__social span{
+        font-size: 30px;
+    }
 }

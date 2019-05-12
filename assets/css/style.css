@@ -277,21 +277,16 @@ h3, .price__sale, .price__text{
 
 
 .price__certificate-card .price__certificate-card_title {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    border-radius: 0 40px;
     font-size: 50px;
-    margin-top: -335px;
+    padding: 30px 0 80px 0;
 }
 .price__certificate-card-logo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
 }
 .price__certificate-card-logo .price__certificate-card_name{
     color: #000;
     font-family: Roboto, sans-serif;
+
 }
 
 .price__certificate-card:hover {
@@ -310,7 +305,7 @@ h3, .price__sale, .price__text{
     align-content: space-around;
     align-items: center;
 }
-.price__certificate-wrap p{
+.price__certificate-text{
     padding-left: 30px;
     color: #000000;
     text-align: justify;
@@ -475,6 +470,7 @@ h3, .price__sale, .price__text{
     font-family: Arial, sans-serif;
     font-weight: bold;
 }
+
 .contacts__social{
     display: flex;
     display: -webkit-flex;
@@ -483,9 +479,17 @@ h3, .price__sale, .price__text{
     display: -ms-flex;
     align-items: center;
     flex-direction: column;
-
 }
-
+.contacts__social a{
+    height: 50px;
+}
+.contacts__social a:hover{
+    border-radius: 48px;
+    border: 1px solid #d628bd;
+    -webkit-box-shadow: 0 0 24px 0 rgba(214,40,189,1);
+    -moz-box-shadow: 0 0 24px 0 rgba(214,40,189,1);
+    box-shadow: 0 0 24px 0 rgba(214,40,189,1);
+}
 /*RESERVATION*/
 
 .reservation__form{
