@@ -1,6 +1,7 @@
-.slider, .slider1{
+.slider{
     /* устанавливаем относительное позиционирование элементу */
     position: relative;
+    padding-bottom: 30px;
 }
 
 .slider__items {
@@ -66,7 +67,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 15%;
     color: #fff;
     text-align: center;
     opacity: 0.5;

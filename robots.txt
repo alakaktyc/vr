@@ -1,5 +1,4 @@
 User-agent: Googlebot
 User-agent: Yandex
-Allow: /.well-known
-Disallow: /.well-known
 Host: vrlida.by
+Sitemap: http://vrlida.by/sitemap.xml

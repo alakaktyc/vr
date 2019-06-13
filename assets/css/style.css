@@ -5,197 +5,103 @@
     src: url(../fonts/Accuratist/Accuratist.otf);
     src: url(../fonts/Accuratist/Accuratist.ttf);
 }
-/*RESET*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}
-.container{
-    margin: 0 auto;
+.layout{
     min-width: 980px;
 }
-
-                /*HEADER*/
-
-.header__back{
-    height: 100vh;
-    background: url("../img/head.jpg") 50% 50%/cover;
-    font-family: "Raleway", sans-serif;
-    letter-spacing: 1px;
+.header,
+.price,
+.games,
+.about,
+.testimonials,
+.contacts{
+    width: 980px;
+    margin: 0 auto;
+    font-family: Roboto, serif;
 }
-h1,h2,h3 {
-    text-align: center;
-    padding: 20px 0;
-    }
-h1, .price__certificate-card_title, .about__VR{
+
+/*HEADER*/
+
+#header,
+#about{
+    background-color: #fbfbfb;
+}
+
+
+.header__flex{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo h1,
+.header__title h2,
+.about__VR{
     font-family: Accuratist, serif;
     font-size: 80px;
     background: linear-gradient(to bottom, #d628bd 20%, #1c0719 80%);
     font-weight: bold;
-    padding: 10vh 0;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.header__contacts a{
+    font-family: Roboto, serif;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 30px;
+}
 
-h2{
-    text-transform: uppercase;
-    text-align: center;
-    color: #fefefe;
-    text-shadow: #e7e7e7 1px 2px 0,
-    #999 4px 3px 3px,
-    #ccc 8px 11px 10px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 40px;
-}
-h3{
-    font-size: 2em;
-    padding: 15px;
-}
-.header__logo{
-    background: url("../img/log.png");
-    width: 83px;
-    height: 57px;
-}
-.header__wrap{
-    width: 980px;
-    height: 70px;
+.header__menu{
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    color: #CC33CC;
-    display: flex;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -o-flex;
-    display: -ms-flex;
 }
-.header__wrap a{
-    text-decoration: none;
-    color: #CC33CC;
-}
-
-.header__navigation {
-    z-index: 2;
-    height: 57px;
-    background-color: rgba(23, 23, 50, 0.7);
-    border-radius: 4px;
-}
-.header__menu {
-    list-style: none;
-    display: flex;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -o-flex;
-    display: -ms-flex;
-    justify-content: center;
-}
-
 .header__menu a {
+    font-family: Roboto, serif;
     text-decoration: none;
-    color: #ffe;
+    color: #819ca9;
     text-transform: uppercase;
     display: block;
     padding: 10px 15px;
     font-size: 30px;
-    font-family: 'Neucha', cursive;
     transition: color 0.5s ease-in-out;
     -webkit-transition: color 0.5s ease-in-out;
     -o-transition: color 0.5s ease-in-out;
     -moz-transition: color 0.5s ease-in-out;
 }
-
-.header__menu a:hover {
+.header__menu a:hover,
+.header__contacts a:hover {
     color: #d628bd;
 }
-.header__inner{
-    display: flex;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -o-flex;
-    display: -ms-flex;
-    align-items: center;
-    flex-direction: column;
-}
-.header__btn{
+.header__controller{
     text-align: center;
 }
-.header__btn a, .reservation__vk a, .reservation__phone a{
-    background: rgba(0, 0, 0, 0.8);
-    border: 5px solid white;
-    border-radius: 50px;
-    line-height: 100px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: Arial, sans-serif;
+.header__controller img{
+    width: 300px;
+}
+.header__title--flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header__title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__title h2{
+    font-size: 40px;
+    padding: 5px;
+}
+.header__title h3 {
+    color: #8993ad;
     font-size: 25px;
-    padding: .5em 2em;
-    color: #fff;
-    transition: box-shadow 0.5s ease-in-out;
+    text-align: center;
+    text-transform: uppercase;
 }
-.header__btn a:hover{box-shadow: inset 0 0 20px 7px #C3C;}
-.header__btn a:active { background: #C3C; }
 
 
 
-/*PRICE*/
-.price{
-    padding-bottom: 20px;
-}
-.price__back, .about__back{
-    background: #fff;
-}
 .price__inner{
     align-items: center;
     display: flex;
@@ -205,17 +111,23 @@ h3{
     display: -ms-flex;
     padding-bottom: 20px;
 }
-.price__table, .work__table{
-    font-family: 'Roboto', sans-serif;
-    cursor: default;
+.price__inner .price__inner-table{
     margin: 0 auto;
+    align-items: center;
+    display: flex;
+    align-content: space-between;
 }
-.price__table, .work__table{
+
+.price__table{
+    cursor: default;
+
+}
+.price__table{
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     padding: 10px;
 }
 
-.price__table td, .work__table td{
+.price__table td{
     border-top: 10px solid #CCCCFF;
     padding: 8px;
     background: #fff;
@@ -223,103 +135,38 @@ h3{
 .price__table tr:nth-child(n+3):hover td{
     background-color: #CC99FF;
 }
-.price__days td, .work__days td{
+.price__days td{
     text-align: center;
     background-color: #bbbbbb;
     font-weight:bold;
 }
-h3, .price__sale, .price__text{
-    font-family: 'Roboto', sans-serif;
-    color: 	#FF3333;
-    text-shadow: 0 1px 0 #ccc,
-    0 2px 0 #c9c9c9,
-    0 3px 0 #bbb,
-    0 4px 0 #b9b9b9,
-    0 5px 0 #aaa,
-    0 6px 1px rgba(0,0,0,.1),
-    0 0 5px rgba(0,0,0,.1),
-    0 1px 3px rgba(0,0,0,.3),
-    0 3px 5px rgba(0,0,0,.2),
-    0 5px 10px rgba(0,0,0,.25),
-    0 10px 10px rgba(0,0,0,.2),
-    0 20px 20px rgba(0,0,0,.15);
 
-}
-.price__sale{
-    font-size: 5em;
-}
-.price__certificate{
-    width: 980px;
-    font-size: 2em;
-    margin: 0 auto;
+
+.price h3,
+.games h3,
+.about h3,
+.testimonials h3{
     text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 20px 0;
+    color: #fbfbfb;
+    font-weight: 700;
 }
-.price__certificate .price__text{
-    font-size: 30px;
-}
+#price,
+#testimonials{
+    background-image: linear-gradient(to bottom right, #feb692, #7367f0);
 
-.price__certificate-card {
-    margin: 30px auto;
-    width: 400px;
-    height: 300px;
-    border-radius: 40px;
-    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-.price__certificate-card .price__certificate-card_back {
-    width: inherit;
-    height: inherit;
-    border-radius: 40px;
-    background: radial-gradient(circle, #74b3db,#19435e);
 }
 
 
-.price__certificate-card .price__certificate-card_title {
-    font-size: 50px;
-    padding: 30px 0 80px 0;
+.games{
+    height: 800px;
 }
-.price__certificate-card-logo{
-
-}
-.price__certificate-card-logo .price__certificate-card_name{
+.games h3,
+.about h3{
     color: #000;
-    font-family: Roboto, sans-serif;
-
-}
-
-.price__certificate-card:hover {
-    transform: scale(0.9, 0.9);
-    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
-    -5px -5px 30px 15px rgba(0,0,0,0.22);
-}
-
-
-.price__certificate-wrap{
-    display: flex;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -o-flex;
-    display: -ms-flex;
-    align-content: space-around;
-    align-items: center;
-}
-.price__certificate-text{
-    padding-left: 30px;
-    color: #000000;
-    text-align: justify;
-    font-size: 0.8em;
-}
-.price__sale-wrap{
-    background: #CCCCFF;
-}
-
-/*GAMES*/
-.games__inner{
-    height:747px;
-    width: 980px;
-    margin: 0 auto;
+    font-weight: 500;
 }
 
 .tabs {
@@ -336,28 +183,29 @@ h3, .price__sale, .price__text{
 }
 
 .tab-title {
-    background: #ccc;
-    padding: 5px 10px;
-    border: 1px solid #666;
-    border-bottom: none;
+    font-size: 20px;
+    color: #fff;
+    margin: 0 auto;
+    background: #a0f;
+    padding: 20px 80px;
 }
-
+.tab-title:hover{
+    cursor: pointer;
+}
 .tab-content {
-    border-radius: 0 70px 70px;
     height: 600px;
-    background: #CCCCFF;
+    background: #fff;
     position: absolute;
-    border: 1px solid #666;
-    padding: 10px;
     left: 0;
     width: calc(100% - 20px);
     display: none;
 }
 
 .tab :checked + .tab-title {
+    color: #000;
     position: relative;
     background: #CCCCFF;
-    top: 1px;
+
     z-index: 1;
 }
 
@@ -377,7 +225,8 @@ h3, .price__sale, .price__text{
 .child-games__title{
     text-align: center;
     font-family: Roboto, sans-serif;
-    font-size: 1.2em;
+    font-size: 1.7em;
+    color:#000;
 }
 
 .games__item, .multi-games__item, .child-games__item{
@@ -390,206 +239,51 @@ h3, .price__sale, .price__text{
 .child-games__item p{
     font-family: Roboto, sans-serif;
     text-align: justify;
+    color: #000;
 }
 
-
-/*MENTION*/
-.mention__back{
-    background: url("../img/mention.jpg") no-repeat 50% 50%/ cover;
-    height: 300px;
-}
 
 
 /*ABOUT*/
+.about{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
 .about__VR{
-    font-size: 25px;
+    font-size: 20px;
 }
-.about__vive{
-    padding: 10px;
+.about__item img{
+    height: 150px;
 }
-.about__inner{
-    padding-bottom: 15px;
+.about__wrap{
+    padding-top: 50px;
     display: flex;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -o-flex;
-    display: -ms-flex;
-    align-items: center;
+    justify-content: space-between;
 }
-.about__text p, .about__admin{
-    line-height: 1.2em;
-    padding: 10px;
-    font-family: Arial, sans-serif;
-}
-
-.about__admin {
-    padding-bottom: 10px;
-    list-style: none;
-}
-.about__admin li{
-    padding:6px;
-}
-.about__admin li:before {
-    padding-right:10px;
-    font-weight: bold;
-    color: #C0C0C0;
-    content: "\2714";
-    transition-duration: 0.5s;
-}
-.about__admin li:hover:before {
-    color: #337AB7;
-    content: "\2714";
-}
-
-
-.work__table td{
-    border-top: 10px solid #454545;
-    background: #fff;
-}
-
 
 /*CONTACTS*/
-.line{
-    width: 1px;
-    background: #CC33CC;
-    height: 250px;
+#contacts{
+    text-align: center;
+    padding: 25px 0;
+    font-size: 20px;
+    background-color: #31293c;
+    color: #fff;
 }
-.contacts__inner{
+.contacts{
     display: flex;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -o-flex;
-    display: -ms-flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-}
-.contacts__back{
-    background:#fff;
-    color: #000;
-    padding-bottom: 20px;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-}
-
-.contacts__social{
-    display: flex;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -o-flex;
-    display: -ms-flex;
-    align-items: center;
-    flex-direction: column;
 }
 .contacts__social a{
-    height: 50px;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
 }
 .contacts__social a:hover{
-    border-radius: 48px;
-    border: 1px solid #d628bd;
-    -webkit-box-shadow: 0 0 24px 0 rgba(214,40,189,1);
-    -moz-box-shadow: 0 0 24px 0 rgba(214,40,189,1);
-    box-shadow: 0 0 24px 0 rgba(214,40,189,1);
+    color: #d628bd;
 }
-/*RESERVATION*/
-
-.reservation__form{
-    display: none;
+.contacts ul{
+    padding-bottom: 15px;
 }
-
-.reservation__back{
-    background:#000000;
-    color: #fff;
-
-}
-.reservation__inner{
-    margin: 0 auto;
-    align-items: center;
-    display: flex;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -o-flex;
-    display: -ms-flex;
-    justify-content: space-around;
-}
-
-.reservation__vk a, .reservation__phone a{
-    text-transform: none;
-}
-.reservation__vk a:hover{box-shadow: inset 0 0 20px 7px #C3C;}
-.reservation__phone a:hover{box-shadow: inset 0 0 20px 7px #C3C;}
-
-.reservation__btn{
-    display: flex;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -o-flex;
-    display: -ms-flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form{
-    margin:0 auto;
-    max-width:95%;
-    box-sizing:border-box;
-    padding:40px;
-    border-radius:5px;
-    background:rgba(255,255,255,1);
-    box-shadow:  0 0 15px 0 rgba(0, 0, 0, .45);
-}
-input{
-    height:50px;
-    width:100%;
-    border-radius:3px;
-    border:rgba(0,0,0,.3) 2px solid;
-    box-sizing:border-box;
-    font-family: Arial, sans-serif;
-    font-size:18px;
-    padding:10px;
-    margin-bottom:30px;
-}
-textarea:focus,
-input:focus{
-    outline:none;
-    border:rgba(24,149,215,1) 2px solid;
-    color:rgba(24,149,215,1);
-}
-/* Стили текстового поля */
-textarea{
-    resize: none;
-    background: rgba(255, 255, 255, 0.4);
-    width:100%;
-    height: 120px;
-    border:rgba(0,0,0,.3) 2px solid;
-    box-sizing:border-box;
-    font-size:18px;
-    font-family: 'Open Sans', sans-serif;
-    display:block;
-    padding:10px;
-    margin-bottom:30px;
-    overflow:hidden;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-}
-
-button{
-    height:50px;
-    width:100%;
-    border-radius:3px;
-    border:rgba(0,0,0,.3) 0 solid;
-    box-sizing:border-box;
-    padding:10px;
-    background:#90c843;
-    color:#FFF;
-    font-family: 'Open Sans', sans-serif;
-    font-weight:400;
-    font-size: 16px;
-    transition:background .4s;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#80b438;
-}
-
