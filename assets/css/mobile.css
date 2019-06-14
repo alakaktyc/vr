@@ -1,0 +1,15 @@
+@media (max-width: 767px) {
+    .header__flex,
+    .header__menu,
+    .header__title,
+    .price__inner{
+        flex-direction: column;
+    }
+    .header__menu{
+        padding-top: 20px;
+    }
+    .price__inner-table{
+        padding-bottom: 30px;
+    }
+
+}
