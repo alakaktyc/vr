@@ -27,9 +27,7 @@
 .games__slider .games__item img,
 .multi-games__slider .multi-games__item img,
 .child-games__slider .child-games__item img{
-    object-fit: cover;
     height: 250px;
-    position: relative;
 
 }
 

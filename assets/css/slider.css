@@ -174,5 +174,6 @@
     padding: 0 10px;
 }
 .slider__flex img{
+    height: 200px;
     border: 2px solid white;
 }

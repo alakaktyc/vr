@@ -6,7 +6,9 @@
     src: url(../fonts/Accuratist/Accuratist.ttf);
 }
 .layout{
-    min-width: 980px;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;;
 }
 .header,
 .price,
@@ -14,8 +16,7 @@
 .about,
 .testimonials,
 .contacts{
-    width: 980px;
-    margin: 0 auto;
+    width: 100%;
     font-family: Roboto, serif;
 }
 
@@ -23,6 +24,7 @@
 
 #header,
 #about{
+    width: 100%;
     background-color: #fbfbfb;
 }
 
@@ -170,7 +172,9 @@
 }
 
 .tabs {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content:space-around ;
 }
 
 .tab,
@@ -185,19 +189,17 @@
 .tab-title {
     font-size: 20px;
     color: #fff;
-    margin: 0 auto;
     background: #a0f;
     padding: 20px 80px;
+    text-align: center;
 }
 .tab-title:hover{
     cursor: pointer;
 }
 .tab-content {
-    height: 600px;
     background: #fff;
     position: absolute;
     left: 0;
-    width: calc(100% - 20px);
     display: none;
 }
 
@@ -230,6 +232,7 @@
 }
 
 .games__item, .multi-games__item, .child-games__item{
+    padding-top: 20px;
     text-align: center;
 }
 
