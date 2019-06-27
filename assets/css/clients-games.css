@@ -1,13 +1,13 @@
 
 /* Собственно сам слайдер */
-.clients__slider, .games__slider, .multi-games__slider, .child-games__slider{
+.games__slider, .multi-games__slider, .child-games__slider{
     max-width: 80%;
     position: relative;
     height: 500px;
     margin: 0 auto;
 
 }
-.clients__wrap, .games__wrap, .multi-games__wrap, .child-games__wrap{
+.games__wrap, .multi-games__wrap, .child-games__wrap{
 
     display: flex;
     display: -webkit-flex;
@@ -19,10 +19,6 @@
 
 
 /* Картинка маштабируется по отношению к родительскому элементу */
-.clients__slider .clients__item img{
-    object-fit: cover;
-    height: 450px;
-}
 
 .games__slider .games__item img,
 .multi-games__slider .multi-games__item img,
@@ -36,8 +32,6 @@
 }
 
 /* Кнопки вперед и назад */
-.clients__slider .clients__prev,
-.clients__slider .clients__next,
 .games__slider .games__prev,
 .games__slider .games__next,
 .multi-games__slider .multi-games__prev,
@@ -61,7 +55,7 @@
 }
 
 
-.clients__slider .clients__next,
+
 .games__slider .games__next,
 .multi-games__slider .multi-games__next,
 .child-games__slider .child-games__next{
@@ -72,8 +66,7 @@
 
 /* При наведении на кнопки добавляем фон кнопок */
 
-.clients__slider .clients__prev:hover,
-.clients__slider .clients__next:hover,
+
 .games__slider .games__prev:hover,
 .games__slider .games__next:hover,
 .multi-games__slider .multi-games__prev:hover,
@@ -117,7 +110,6 @@
 
 /* Анимация слайдов */
 
-.clients__slider .clients__item,
 .games__slider .games__item,
 .multi-games__slider .multi-games__item,
 .child-games__slider .child-games__item{
