@@ -31,8 +31,14 @@
 
 .header__flex{
     height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .header__logo h1,
@@ -40,6 +46,9 @@
 .about__VR{
     font-family: Accuratist, serif;
     font-size: 80px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #d628bd), color-stop(80%, #1c0719));
+    background: -webkit-linear-gradient(top, #d628bd 20%, #1c0719 80%);
+    background: -o-linear-gradient(top, #d628bd 20%, #1c0719 80%);
     background: linear-gradient(to bottom, #d628bd 20%, #1c0719 80%);
     font-weight: bold;
     -webkit-background-clip: text;
@@ -54,8 +63,14 @@
 }
 
 .header__menu{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .header__menu a {
@@ -82,13 +97,26 @@
     width: 300px;
 }
 .header__title--flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .header__title{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 .header__title h2{
@@ -105,9 +133,12 @@
 
 
 .price__inner{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    display: -webkit-flex;
     display: -moz-flex;
     display: -o-flex;
     display: -ms-flex;
@@ -115,8 +146,13 @@
 }
 .price__inner .price__inner-table{
     margin: 0 auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-line-pack: justify;
     align-content: space-between;
 }
 
@@ -125,6 +161,7 @@
 
 }
 .price__table{
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     padding: 10px;
 }
@@ -157,6 +194,9 @@
 }
 #price,
 #testimonials{
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#feb692), to(#7367f0));
+    background-image: -webkit-linear-gradient(top left, #feb692, #7367f0);
+    background-image: -o-linear-gradient(top left, #feb692, #7367f0);
     background-image: linear-gradient(to bottom right, #feb692, #7367f0);
 
 }
@@ -172,8 +212,13 @@
 }
 
 .tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-line-pack:distribute;
     align-content:space-around ;
 }
 
@@ -212,13 +257,19 @@
 }
 
 .tab :checked ~ .tab-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    display: -webkit-flex;
     display: -moz-flex;
     display: -o-flex;
     display: -ms-flex;
     justify-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -261,7 +312,11 @@
 }
 .about__wrap{
     padding-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -274,8 +329,14 @@
     color: #fff;
 }
 .contacts{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .contacts__social a{
