@@ -144,6 +144,23 @@
     display: -ms-flex;
     padding-bottom: 20px;
 }
+.price__rent{
+    text-align: center;
+}
+.price__rent p{
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #fff;
+}
+.price__rent p span{
+    font-size: 30px;
+    color: #880000;
+    font-weight: bolder;
+}
+.price__rent img{
+    width: 80%;
+
+}
 .price__inner .price__inner-table{
     margin: 0 auto;
     -webkit-box-align: center;
